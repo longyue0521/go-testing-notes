@@ -15,7 +15,6 @@ func TestSum() {
 		msg := fmt.Sprintf("FAIL 1: Wanted 3 but Got %d", sum)
 		panic(msg)
 	}
-	fmt.Println("PASS 1")
 
 	// 测试用例2
 	sum = math.Sum([]int{10, -1, 2})
@@ -24,7 +23,8 @@ func TestSum() {
 		msg := fmt.Sprintf("FAIL 2: Wanted 11 but Got %d", sum)
 		panic(msg)
 	}
-	fmt.Println("PASS 2")
+
+	fmt.Println("PASS")
 }
 
 func main() {
